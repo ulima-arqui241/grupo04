@@ -2,6 +2,6 @@
 
 - [Josemaria Pérez](perez/perez.md)
 - [Leonardo Solimano](solimano/solimano.md) 
-- [-------](gates/gates.md)
+- [Johan Blanco](blanco/blanco.md)
 
 [Regresar al índice](../proyecto.md)
