@@ -6,4 +6,4 @@ Bienvenidos al repositorio del Proyecto del Curso del Grupo 04. Aquí encontrar�
 
 1. [Integrantes del grupo](01.%20integrantes/integrantes.md)
 
-2. Otra sección
+2. [Descripción del proyecto](02.%20descripcionProyecto/proyecto.md)
