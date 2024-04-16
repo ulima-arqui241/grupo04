@@ -4,11 +4,22 @@ El proyecto a desarrollar consiste en una plataforma web la cual permita realiza
 
 ## Stakeholders
 ### Cliente
-Organizacion educativa o clientes que estan interesados en facilitar el aprendizaje colectivo.
+Organizaciones educativas o clientes que estan interesados en facilitar el aprendizaje colectivo.
 ### Usuario
 Todas las personas que utilicen la plataforma web para participar en grupos de estudio.
+### Gestor de negocios
+Josemaria
+### Diseño de la Arquitectura
+Todos
+### Jefe de Proyecto
+Solimano
+### Implementacion
+Nosotros
+
+
 ## Stack tecnológico a utilizar
 ### FrontEnd
+Html, Css y Js
 ### BackEnd
 Servicos en ASP.Net
 ### Base de datos
