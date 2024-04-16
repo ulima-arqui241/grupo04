@@ -45,7 +45,18 @@ Los administradores de grupo pueden gestionar el contenido compartido, eliminar 
 ### Programación de Sesiones: 
 Los grupos pueden programar sesiones de estudio en línea, establecer objetivos de aprendizaje y asignar tareas.
 
+## Modelo de Negocio(Suscripción Premium)
 
+### Plan Gratuito y Premium:
+ La plataforma ofrece un plan gratuito con funciones básicas y un plan premium con características avanzadas, como acceso ilimitado a recursos premium y funciones de colaboración mejoradas.
+### Suscripciones Mensuales o Anuales: 
+Los usuarios pueden optar por suscripciones mensuales o anuales al plan premium, con descuentos para las suscripciones anuales.
+### Prueba Gratuita: 
+Se ofrece una prueba gratuita del plan premium durante un período limitado para atraer a nuevos usuarios y demostrar el valor del servicio.
+### Descuentos para Estudiantes:
+ Se ofrecen descuentos especiales para estudiantes con el fin de promover la adopción de la plataforma entre este público objetivo.
+### Ingresos por Publicidad: 
+Además de las suscripciones premium, la plataforma puede generar ingresos mediante la inclusión de publicidad relevante y no intrusiva.
 
 
 
