@@ -25,7 +25,7 @@ Servicos en ASP.Net
 ### Base de datos
 Microsoft SQL Server
 
-### Funcionamiento del Proyecto
+## Funcionamiento del Proyecto
 
 ### Registro de Usuarios: 
 Los usuarios se registran en la plataforma web proporcionando información básica y creando un perfil.
@@ -39,8 +39,7 @@ Los usuarios pueden unirse a grupos de estudio relevantes a sus objetivos educat
 Los administradores de grupo pueden gestionar el contenido compartido, eliminar mensajes inapropiados y agregar recursos educativos relevantes.
 ### Programación de Sesiones: 
 Los grupos pueden programar sesiones de estudio en línea, establecer objetivos de aprendizaje y asignar tareas.
-### Seguimiento del Progreso: 
-La plataforma permite a los usuarios realizar un seguimiento de su progreso individual y del grupo, visualizar estadísticas y recibir retroalimentación.
+
 
 
 
