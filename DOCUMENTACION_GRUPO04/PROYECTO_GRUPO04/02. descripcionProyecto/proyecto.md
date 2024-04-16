@@ -10,11 +10,16 @@ Todas las personas que utilicen la plataforma web para participar en grupos de e
 ### Gestor de negocios
 Josemaria
 ### Diseño de la Arquitectura
-Todos
+Nosotros
 ### Jefe de Proyecto
 Solimano
-### Implementacion
+### Implementacion del software
 Nosotros
+### Diseño del software
+Nosotros
+### Testing 
+Nosotros
+
 
 
 ## Stack tecnológico a utilizar
