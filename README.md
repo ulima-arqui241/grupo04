@@ -6,10 +6,10 @@ El proyecto consiste en desarrollar una plataforma web educativa orientada a est
 ## Indice
 
 1. [Integrantes](integrantes/integrantes.md)
-2. [Caso de negocio](Documento/2.%20Caso%20del%20Negocio.md)
-3. [Requerimientos del sistema](Documento/3.%20Decisiones%20de%20Arquitectura.md)
-4. [Decisiones de arquitectura](Documento/4.%20Requerimientos%20del%20Sistema.md)
-5. [Tácticas](Documento/5.%20Tacticas.md)
+2. [Caso de negocio](Documento/1.%20Caso%20del%20Negocio.md)
+3. [Requerimientos del sistema](Documento/2.%20Requerimientos%20del%20Sistema.md)
+4. [Decisiones de arquitectura](Documento/3.%20Decisiones%20de%20Arquitectura.md)
+5. [Tácticas](Documento/4.%20Tacticas.md)
 
 
 ## Referencias
