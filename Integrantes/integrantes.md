@@ -4,4 +4,4 @@
 - [Leonardo Solimano](solimano/solimano.md) 
 - [Johan Blanco](blanco/blanco.md)
 
-[Regresar al índice](../proyecto.md)
+[Regresar al índice](../README.md)

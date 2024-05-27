@@ -1,1 +1,0 @@
-[Regresar al índice](../proyecto.md)
