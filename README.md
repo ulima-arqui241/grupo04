@@ -13,4 +13,4 @@ El proyecto consiste en desarrollar una plataforma web educativa orientada a est
 
 
 ## Referencias
-* agregar referencias
+* Bass, L., Clements, P., & Kazman, R. (2013). Software Architecture in Practice (3rd ed.). Addison-Wesley Professional.
