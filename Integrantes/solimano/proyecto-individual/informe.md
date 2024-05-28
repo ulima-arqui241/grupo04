@@ -35,29 +35,29 @@ Para implementar microservicios, se pueden utilizar diferentes herramientas y pl
 
 Crear un archivo `Dockerfile` para contenerizar un servicio.
 
-# Establecer la imagen base para la fase de construcción
+**Establecer la imagen base para la fase de construcción**
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copiar el archivo de proyecto y restaurar dependencias
+**Copiar el archivo de proyecto y restaurar dependencias**
 COPY myFirstService/myFirstService.csproj .
 RUN dotnet restore
 
-# Copiar el resto del código y construir el proyecto
+**Copiar el resto del código y construir el proyecto**
 COPY . .
 RUN dotnet build "myFirstService.csproj" -c Release -o /app/build
 
-# Publicar el proyecto
+**Publicar el proyecto**
 RUN dotnet publish "myFirstService.csproj" -c Release -o /app/publish
 
-# Establecer la imagen base para el contenedor de producción
+**Establecer la imagen base para el contenedor de producción**
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
-# Copiar los archivos publicados desde la fase de construcción
+**Copiar los archivos publicados desde la fase de construcción**
 COPY --from=build /app/publish .
 
-# Establecer el punto de entrada
+**Establecer el punto de entrada**
 ENTRYPOINT ["dotnet", "myFirstService.dll"]
 
 
@@ -71,7 +71,7 @@ docker run -d -p 8080:80 --name myfirstservicecontainer myfirstservice
 #### 4. Demo
 
 **Repositorio en GitHub:**
-- [Microservicios con .Net](https://github.com/MXLEOMX/Microservicios-con-.Net)
+ https://github.com/MXLEOMX/Microservicios-con-.Net
 
 **4.1. Escenario Práctico**
 
