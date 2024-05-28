@@ -35,7 +35,6 @@ Para implementar microservicios, se pueden utilizar diferentes herramientas y pl
 
 Crear un archivo `Dockerfile` para contenerizar un servicio.
 
-```dockerfile
 # Establecer la imagen base para la fase de construcción
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
@@ -64,10 +63,10 @@ ENTRYPOINT ["dotnet", "myFirstService.dll"]
 
 Construir y ejecutar la imagen Docker:
 
-\`\`\`bash
+
 docker build -t myfirstservice .
 docker run -d -p 8080:80 --name myfirstservicecontainer myfirstservice
-\`\`\`
+
 
 #### 4. Demo
 
