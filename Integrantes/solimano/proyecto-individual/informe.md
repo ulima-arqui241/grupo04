@@ -1,4 +1,3 @@
-
 # Arquitectura de Software: Microservicios
 
 ## Introducción
@@ -16,7 +15,9 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Despliegue Independiente**: Los servicios pueden desplegarse sin necesidad de desplegar toda la aplicación.
   - **Tolerancia a Fallos**: Los servicios están diseñados para manejar fallos de manera autónoma y no afectar al sistema global.
  
-    ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/183755b4-9826-4ade-a34d-d52b4ad7fa43)
+<div style="text-align: center;">
+  <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/183755b4-9826-4ade-a34d-d52b4ad7fa43" alt="image">
+</div>
 
 ## Comparación con Arquitectura Monolítica
 
@@ -33,7 +34,9 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Despliegue**: Un pequeño cambio requiere volver a desplegar toda la aplicación, lo cual puede ser riesgoso y costoso en términos de tiempo.
   - **Flexibilidad**: Restringe el uso de diferentes tecnologías y lenguajes de programación.
 
-![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/567b3116-b5fb-45ce-8b0e-7a225ba78f95)
+<div style="text-align: center;">
+  <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/567b3116-b5fb-45ce-8b0e-7a225ba78f95" alt="image">
+</div>
 
 ### Microservicios
 
@@ -49,7 +52,10 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Latencia**: La comunicación entre servicios puede introducir latencias adicionales.
   - **Seguridad**: Aumenta la superficie de ataque debido a la exposición de múltiples endpoints.
 
-![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f)
+<div style="text-align: center;">
+  <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f" alt="image">
+</div>
+
 
 ## Consideraciones Técnicas
 
