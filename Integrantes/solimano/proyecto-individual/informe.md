@@ -70,9 +70,9 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Latencia**: La comunicación entre servicios puede introducir latencias adicionales.
   - **Seguridad**: Aumenta la superficie de ataque debido a la exposición de múltiples endpoints.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f" alt="image">
-</div>
+</p>
 
 
 ## Consideraciones Técnicas
