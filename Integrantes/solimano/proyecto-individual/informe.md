@@ -73,7 +73,21 @@ Para involucrarse con la arquitectura de microservicios, es crucial considerar c
    - Implementar autenticación y autorización robusta (e.g., OAuth2, JWT).
    - Asegurar la comunicación entre servicios con TLS.
 
-## Demo (Código)
+## Demo (Escenario / Código)
+
+Imagina que estás construyendo una aplicación de tienda online donde los clientes pueden registrarse, navegar por los productos y hacer pedidos. Vamos a usar nuestros microservicios (UserService, ProductService y OrderService) para gestionar esta funcionalidad.
+
+### Escenario
+
+#### Registro de Usuarios:
+- Un nuevo usuario se registra en la tienda online proporcionando su nombre y correo electrónico.
+
+#### Registro de Productos:
+- El administrador de la tienda agrega nuevos productos al catálogo, especificando el nombre y el precio de cada producto.
+
+#### Creación de Pedidos:
+- Un usuario registrado puede hacer un pedido seleccionando productos y especificando la cantidad.
+
 
 El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub](https://github.com/MXLEOMX/MicroservicesDemo). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
 
