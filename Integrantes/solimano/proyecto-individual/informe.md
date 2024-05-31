@@ -1,5 +1,5 @@
 
-# Tópicos en Arquitectura de Software: Microservicios
+# Arquitectura de Software: Microservicios
 
 ## Introducción
 La arquitectura de microservicios es una metodología de desarrollo de software que estructura una aplicación como una colección de servicios pequeños y autónomos, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros, generalmente HTTP. Este enfoque contrasta con la arquitectura monolítica tradicional, donde una aplicación se desarrolla y despliega como una única unidad cohesiva.
@@ -76,6 +76,29 @@ Para involucrarse con la arquitectura de microservicios, es crucial considerar c
 ## Demo (Código)
 
 El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub](https://github.com/MXLEOMX/MicroservicesDemo). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
+
+### Recursos
+
+#### Libros
+- Newman, S. (2021). **Building Microservices: Designing Fine-Grained Systems** (2nd ed.). O'Reilly Media.
+- Richardson, C. (2018). **Microservices Patterns: With examples in Java**. Manning Publications.
+
+#### Artículos y Blogs
+- Fowler, M. (2014). **Microservices: a definition of this new architectural term**. Retrieved from [https://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html)
+- Nginx. (2023). **Introduction to Microservices**. Retrieved from [https://www.nginx.com/learn/microservices/](https://www.nginx.com/learn/microservices/)
+
+#### Documentación
+- Microsoft. (2023). **Introduction to Microservices on Azure**. Retrieved from [https://docs.microsoft.com/en-us/azure/architecture/microservices/](https://docs.microsoft.com/en-us/azure/architecture/microservices/)
+- Kubernetes. (2023). **Kubernetes Documentation**. Retrieved from [https://kubernetes.io/docs/home/](https://kubernetes.io/docs/home/)
+- Docker. (2023). **Docker Documentation**. Retrieved from [https://docs.docker.com/](https://docs.docker.com/)
+
+#### Cursos y Tutoriales
+- Coursera. (2023). **Microservices - Fundamentals**. Available at [https://www.coursera.org/learn/microservices-fundamentals](https://www.coursera.org/learn/microservices-fundamentals)
+- Udemy. (2023). **Microservices with Node JS and React**. Available at [https://www.udemy.com/course/microservices-with-node-js-and-react/](https://www.udemy.com/course/microservices-with-node-js-and-react/)
+
+#### Videos
+- YouTube. (2023). **Microservices Explained in 5 Minutes** by Tech With Tim. Available at [https://www.youtube.com/watch?v=jKH4gY6r0wM](https://www.youtube.com/watch?v=jKH4gY6r0wM)
+- YouTube. (2023). **Microservices Architecture: What Are Microservices?** by IBM Technology. Available at [https://www.youtube.com/watch?v=tZl3L5FDTLU](https://www.youtube.com/watch?v=tZl3L5FDTLU)
 
 
 ## Conclusión
