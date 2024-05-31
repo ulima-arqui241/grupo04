@@ -75,7 +75,7 @@ Para involucrarse con la arquitectura de microservicios, es crucial considerar c
 
 ## Demo (Código)
 
-El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub]([https://github.com/MXLEOMX/Microservicios-con-.Net](https://github.com/MXLEOMX/MicroservicesDemo)). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
+El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub](https://github.com/MXLEOMX/Microservicios-con-.Net). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
 
 ## Referencias
 
