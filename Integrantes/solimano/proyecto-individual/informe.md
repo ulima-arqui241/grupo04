@@ -83,23 +83,17 @@ El código de demostración se ha desarrollado utilizando .NET Core y se encuent
 - Newman, S. (2021). **Building Microservices: Designing Fine-Grained Systems** (2nd ed.). O'Reilly Media.
 - Richardson, C. (2018). **Microservices Patterns: With examples in Java**. Manning Publications.
 
-#### Artículos y Blogs
+#### Artículo 
 - Fowler, M. (2014). **Microservices: a definition of this new architectural term**. Retrieved from [https://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html)
-- Nginx. (2023). **Introduction to Microservices**. Retrieved from [https://www.nginx.com/learn/microservices/](https://www.nginx.com/learn/microservices/)
 
 #### Documentación
 - Microsoft. (2023). **Introduction to Microservices on Azure**. Retrieved from [https://docs.microsoft.com/en-us/azure/architecture/microservices/](https://docs.microsoft.com/en-us/azure/architecture/microservices/)
 - Kubernetes. (2023). **Kubernetes Documentation**. Retrieved from [https://kubernetes.io/docs/home/](https://kubernetes.io/docs/home/)
 - Docker. (2023). **Docker Documentation**. Retrieved from [https://docs.docker.com/](https://docs.docker.com/)
 
-#### Cursos y Tutoriales
-- Coursera. (2023). **Microservices - Fundamentals**. Available at [https://www.coursera.org/learn/microservices-fundamentals](https://www.coursera.org/learn/microservices-fundamentals)
+#### Curso
+
 - Udemy. (2023). **Microservices with Node JS and React**. Available at [https://www.udemy.com/course/microservices-with-node-js-and-react/](https://www.udemy.com/course/microservices-with-node-js-and-react/)
-
-#### Videos
-- YouTube. (2023). **Microservices Explained in 5 Minutes** by Tech With Tim. Available at [https://www.youtube.com/watch?v=jKH4gY6r0wM](https://www.youtube.com/watch?v=jKH4gY6r0wM)
-- YouTube. (2023). **Microservices Architecture: What Are Microservices?** by IBM Technology. Available at [https://www.youtube.com/watch?v=tZl3L5FDTLU](https://www.youtube.com/watch?v=tZl3L5FDTLU)
-
 
 ## Conclusión
 
