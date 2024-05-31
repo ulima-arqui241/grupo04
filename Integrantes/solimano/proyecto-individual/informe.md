@@ -93,6 +93,10 @@ El código de demostración se ha desarrollado utilizando .NET Core y se encuent
 
 Además, en el siguiente enlace se proporcionará la guía para crear un microservicio desde CERO: https://docs.google.com/document/d/1kNID5updjBwSQpOm7Hvn0BKTityLwiak/edit?usp=sharing&ouid=111933879657736861856&rtpof=true&sd=true
 
+Enlace a la guía del video por google drive: https://drive.google.com/file/d/1zmVBthpLbzWtXPCGtvA8hkYhSdeCNu-A/view?usp=drive_link
+
+Enlace a la guía del video por youtube: https://youtu.be/jNX3jHkIxH4
+
 ## Recursos
 
 #### Libros
