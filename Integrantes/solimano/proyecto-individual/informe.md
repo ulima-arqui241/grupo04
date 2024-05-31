@@ -1,116 +1,92 @@
-### Tópicos en Arquitectura de Software: Microservicios
 
-#### 1. Tema
+# Tópicos en Arquitectura de Software: Microservicios
 
-Para el siguiente componente individual del trabajo, se abordará el tema de Microservicios, el cual pertenece a la categoría de Arquitectura de Software.
+## Introducción
+La arquitectura de microservicios es una metodología de desarrollo de software que estructura una aplicación como una colección de servicios pequeños y autónomos, cada uno ejecutándose en su propio proceso y comunicándose con mecanismos ligeros, generalmente HTTP. Este enfoque contrasta con la arquitectura monolítica tradicional, donde una aplicación se desarrolla y despliega como una única unidad cohesiva.
 
-#### 2. Desarrollo Conceptual
+## Desarrollo Conceptual
 
-Los microservicios representan una arquitectura de software donde una aplicación se divide en un conjunto de servicios pequeños e independientes. Cada servicio es autónomo y se comunica con otros servicios a través de APIs bien definidas. Esta arquitectura permite que cada microservicio se desarrolle, despliegue y escale de manera independiente, facilitando una mayor agilidad y resiliencia en el desarrollo y operación de software.
+### Microservicios
 
-Según Newman (2015), los microservicios permiten a las organizaciones ser más ágiles, ya que los equipos pueden trabajar en diferentes servicios de manera simultánea, sin afectar a los demás. Fowler (2014) resalta que los microservicios son una evolución de las arquitecturas orientadas a servicios (SOA), con un enfoque en servicios más pequeños y especializados. Estos servicios están diseñados para cumplir con una funcionalidad específica del negocio, lo que reduce el acoplamiento y permite una mayor flexibilidad y escalabilidad.
+- **Definición**: Los microservicios son una técnica de desarrollo de software que descompone las aplicaciones en pequeños servicios independientes que se comunican entre sí a través de interfaces bien definidas.
+- **Principios**:
+  - **Desacoplamiento**: Cada servicio es independiente y puede desarrollarse, desplegarse y escalarse de manera autónoma.
+  - **Orientación a Negocios**: Los servicios suelen alinearse con capacidades de negocio, facilitando un desarrollo más ágil y dirigido por las necesidades del cliente.
+  - **Comunicación Ligera**: Utilizan protocolos ligeros como HTTP/REST o mensajería ligera para la comunicación entre servicios.
+  - **Despliegue Independiente**: Los servicios pueden desplegarse sin necesidad de desplegar toda la aplicación.
+  - **Tolerancia a Fallos**: Los servicios están diseñados para manejar fallos de manera autónoma y no afectar al sistema global.
 
-En la arquitectura de microservicios, cada servicio se centra en una funcionalidad específica del negocio, y puede ser desarrollado con diferentes tecnologías y lenguajes de programación. Esta independencia técnica permite una mejor adopción de nuevas tecnologías y una mayor flexibilidad para los equipos de desarrollo. Además, la arquitectura de microservicios facilita el despliegue continuo y la entrega rápida de nuevas funcionalidades, lo que es esencial en entornos de desarrollo ágiles y dinámicos.
+## Comparación con Arquitectura Monolítica
 
-Los microservicios también promueven la resiliencia y la tolerancia a fallos. Dado que cada servicio es independiente, el fallo de un microservicio no afecta a toda la aplicación. Esto permite que los sistemas sean más robustos y capaces de manejar errores sin interrupciones significativas. La independencia de los servicios también facilita la implementación de prácticas de DevOps, como la integración continua y el despliegue continuo (CI/CD), lo que mejora la eficiencia y la calidad del software.
+### Arquitectura Monolítica
 
-#### 3. Consideraciones Técnicas
+- **Definición**: Una aplicación monolítica es una aplicación de software donde diferentes componentes están interconectados y dependientes unos de otros, desplegados como una sola unidad.
+- **Ventajas**:
+  - **Simplicidad**: Fácil de desarrollar, probar y desplegar en etapas iniciales.
+  - **Rendimiento**: Puede ser más eficiente en términos de rendimiento debido a la menor sobrecarga de comunicación.
+  - **Transacciones**: Manejar transacciones distribuidas es más sencillo ya que todo el código está en un solo lugar.
+- **Desventajas**:
+  - **Escalabilidad**: Difícil de escalar horizontalmente ya que toda la aplicación debe escalarse.
+  - **Mantenimiento**: A medida que la aplicación crece, el código se vuelve complejo y difícil de mantener.
+  - **Despliegue**: Un pequeño cambio requiere volver a desplegar toda la aplicación, lo cual puede ser riesgoso y costoso en términos de tiempo.
+  - **Flexibilidad**: Restringe el uso de diferentes tecnologías y lenguajes de programación.
 
-**3.1. Instalación y Configuración**
+### Microservicios
 
-Para implementar microservicios, se pueden utilizar diferentes herramientas y plataformas. En este caso, utilizaré .NET y Docker para contenerizar los microservicios, y Kubernetes para su orquestación.
+- **Ventajas**:
+  - **Escalabilidad**: Cada servicio puede escalarse de manera independiente según su necesidad de carga.
+  - **Despliegue Continuo**: Permite despliegues frecuentes y más seguros, ya que los cambios se hacen en servicios pequeños y aislados.
+  - **Tecnologías Diversas**: Cada servicio puede desarrollarse con la tecnología más adecuada para su función específica.
+  - **Tolerancia a Fallos**: Aislamiento de fallos, donde el fallo de un servicio no necesariamente impacta a toda la aplicación.
+  - **Mantenibilidad**: Facilita el mantenimiento y la evolución de la aplicación al permitir cambios en servicios individuales sin afectar a otros.
+- **Desventajas**:
+  - **Complejidad**: Introduce complejidades en términos de gestión de datos, transacciones distribuidas, y comunicación entre servicios.
+  - **Sobrecarga Operativa**: Requiere una infraestructura más robusta para manejar la orquestación y monitoreo de múltiples servicios.
+  - **Latencia**: La comunicación entre servicios puede introducir latencias adicionales.
+  - **Seguridad**: Aumenta la superficie de ataque debido a la exposición de múltiples endpoints.
 
-**Instalación de Docker**
+## Consideraciones Técnicas
 
-1. **Descargar Docker Desktop** desde [Docker Desktop para Windows](https://www.docker.com/products/docker-desktop).
-2. **Instalar Docker Desktop** siguiendo las instrucciones del instalador.
-3. **Verificar la instalación** ejecutando `docker --version` en el terminal.
+Para involucrarse con la arquitectura de microservicios, es crucial considerar ciertos aspectos técnicos:
 
-**Instalación de Kubernetes**
+1. **Descomposición del Sistema**:
+   - Identificar las capacidades de negocio y descomponer la aplicación en servicios independientes.
+   - Definir interfaces claras y bien documentadas para la comunicación entre servicios.
 
-1. Kubernetes se incluye con Docker Desktop. Asegúrate de habilitar Kubernetes en las configuraciones de Docker Desktop.
-2. Verificar la instalación de Kubernetes ejecutando `kubectl version` en el terminal.
+2. **Comunicación entre Servicios**:
+   - Usar protocolos ligeros como HTTP/REST, gRPC o mensajería (e.g., RabbitMQ, Kafka).
+   - Implementar patrones como API Gateway para centralizar las llamadas a servicios.
 
-**3.2. Contenerización de Microservicios**
+3. **Gestión de Datos**:
+   - Adoptar bases de datos descentralizadas, donde cada servicio maneja su propia base de datos.
+   - Manejar la consistencia eventual y evitar transacciones distribuidas complejas.
 
-Crear un archivo `Dockerfile` para contenerizar un servicio.
+4. **Despliegue y Orquestación**:
+   - Utilizar contenedores (e.g., Docker) para empaquetar servicios.
+   - Implementar orquestadores como Kubernetes para gestionar el despliegue, escalado y monitoreo de los contenedores.
 
-**Establecer la imagen base para la fase de construcción**
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
+5. **Monitoreo y Trazabilidad**:
+   - Implementar soluciones de monitoreo y logging centralizado (e.g., ELK Stack, Prometheus, Grafana).
+   - Utilizar herramientas de trazabilidad distribuida (e.g., Jaeger, Zipkin) para rastrear las solicitudes a través de múltiples servicios.
 
-**Copiar el archivo de proyecto y restaurar dependencias**
-COPY myFirstService/myFirstService.csproj .
-RUN dotnet restore
+6. **Seguridad**:
+   - Implementar autenticación y autorización robusta (e.g., OAuth2, JWT).
+   - Asegurar la comunicación entre servicios con TLS.
 
-**Copiar el resto del código y construir el proyecto**
-COPY . .
-RUN dotnet build "myFirstService.csproj" -c Release -o /app/build
+## Demo (Código)
 
-**Publicar el proyecto**
-RUN dotnet publish "myFirstService.csproj" -c Release -o /app/publish
+El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub](https://github.com/MXLEOMX/Microservicios-con-.Net). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
 
-**Establecer la imagen base para el contenedor de producción**
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
-WORKDIR /app
+## Referencias
 
-**Copiar los archivos publicados desde la fase de construcción**
-COPY --from=build /app/publish .
+- Fowler, M. (2014). **Microservices: a definition of this new architectural term**. Retrieved from [https://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html)
+- Newman, S. (2021). **Building Microservices: Designing Fine-Grained Systems** (2nd ed.). O'Reilly Media.
+- Microsoft. (2023). **Introduction to Microservices on Azure**. Retrieved from [https://docs.microsoft.com/en-us/azure/architecture/microservices/](https://docs.microsoft.com/en-us/azure/architecture/microservices/)
+- Pahl, C., Brogi, A., Soldani, J., & Jamshidi, P. (2018). **Cloud Container Technologies: a State-of-the-Art Review**. *IEEE Transactions on Cloud Computing*, 7(3), 677-692. doi:10.1109/TCC.2017.2702586
 
-**Establecer el punto de entrada**
-ENTRYPOINT ["dotnet", "myFirstService.dll"]
+## Conclusión
 
+La arquitectura de microservicios ofrece ventajas significativas en términos de escalabilidad, despliegue y mantenibilidad en comparación con la arquitectura monolítica. Sin embargo, también introduce complejidades adicionales que deben ser gestionadas cuidadosamente. Adoptar microservicios requiere una comprensión profunda de los principios de diseño y un ecosistema tecnológico robusto para manejar la comunicación, seguridad y despliegue de servicios independientes.
 
-Construir y ejecutar la imagen Docker:
-
-
-docker build -t myfirstservice .
-docker run -d -p 8080:80 --name myfirstservicecontainer myfirstservice
-
-
-#### 4. Demo
-
-**Repositorio en GitHub:**
- https://github.com/MXLEOMX/Microservicios-con-.Net
-
-**4.1. Escenario Práctico**
-
-Tengo una tienda llamada "MyShop". Quiero asegurarme de que el servicio de gestión de productos sea robusto y escalable. Por eso, decido implementar este servicio como un microservicio independiente utilizando .NET y Docker.
-
-**4.2. Pasos para la Demo**
-
-1. **Crear el Proyecto en .NET**
-
-
-dotnet new webapi -n ProductService --no-https
-cd ProductService
-
-
-2. **Escribir el Dockerfile**
-
-Crear un archivo `Dockerfile` en el directorio raíz del proyecto con el contenido proporcionado anteriormente.
-
-3. **Construir y Ejecutar la Imagen Docker**
-
-
-docker build -t productservice .
-docker run -d -p 8080:80 --name productservicecontainer productservice
-
-
-4. **Verificar el Servicio**
-
-Abre un navegador web y navega a `http://localhost:8080/swagger` para ver la documentación Swagger generada automáticamente de la API.
-
-**4.3. Código del Servicio en github**
-
-https://github.com/MXLEOMX/Microservicios-con-.Net
-
-**4.4. Resultados**
-
-La API de gestión de productos debería estar operativa y accesible a través de Swagger en el puerto 8080. Esto permite interactuar con los endpoints del microservicio y verificar su funcionamiento. La implementación de este servicio demuestra la capacidad de los microservicios para ser desplegados y escalados de manera independiente, mejorando la resiliencia y la capacidad de respuesta del sistema.
-
-### 5. Referencias
-
-- Newman, S. (2015). Building Microservices: Designing Fine-Grained Systems. O'Reilly Media, Inc.
-- Fowler, M. (2014). Microservices: a definition of this new architectural term. martinfowler.com.
+Esta revisión proporciona una base sólida para comprender los beneficios y desafíos de los microservicios, ofreciendo una comparación clara con las arquitecturas monolíticas tradicionales. Con la correcta implementación y gestión, los microservicios pueden facilitar un desarrollo más ágil y resistente para aplicaciones modernas.
 
