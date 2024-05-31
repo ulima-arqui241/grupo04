@@ -77,6 +77,13 @@ Para involucrarse con la arquitectura de microservicios, es crucial considerar c
 
 El código de demostración se ha desarrollado utilizando .NET Core y se encuentra disponible en el [repositorio de GitHub](https://github.com/MXLEOMX/MicroservicesDemo). Este código incluye tres microservicios (`UserService`, `ProductService`, `OrderService`) que se comunican entre sí para manejar la creación y consulta de órdenes, usuarios y productos.
 
+
+## Conclusión
+
+La arquitectura de microservicios ofrece ventajas significativas en términos de escalabilidad, despliegue y mantenibilidad en comparación con la arquitectura monolítica. Sin embargo, también introduce complejidades adicionales que deben ser gestionadas cuidadosamente. Adoptar microservicios requiere una comprensión profunda de los principios de diseño y un ecosistema tecnológico robusto para manejar la comunicación, seguridad y despliegue de servicios independientes.
+
+Esta revisión proporciona una base sólida para comprender los beneficios y desafíos de los microservicios, ofreciendo una comparación clara con las arquitecturas monolíticas tradicionales. Con la correcta implementación y gestión, los microservicios pueden facilitar un desarrollo más ágil y resistente para aplicaciones modernas.
+
 ## Referencias
 
 - Fowler, M. (2014). **Microservices: a definition of this new architectural term**. Retrieved from [https://martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html)
@@ -84,9 +91,4 @@ El código de demostración se ha desarrollado utilizando .NET Core y se encuent
 - Microsoft. (2023). **Introduction to Microservices on Azure**. Retrieved from [https://docs.microsoft.com/en-us/azure/architecture/microservices/](https://docs.microsoft.com/en-us/azure/architecture/microservices/)
 - Pahl, C., Brogi, A., Soldani, J., & Jamshidi, P. (2018). **Cloud Container Technologies: a State-of-the-Art Review**. *IEEE Transactions on Cloud Computing*, 7(3), 677-692. doi:10.1109/TCC.2017.2702586
 
-## Conclusión
-
-La arquitectura de microservicios ofrece ventajas significativas en términos de escalabilidad, despliegue y mantenibilidad en comparación con la arquitectura monolítica. Sin embargo, también introduce complejidades adicionales que deben ser gestionadas cuidadosamente. Adoptar microservicios requiere una comprensión profunda de los principios de diseño y un ecosistema tecnológico robusto para manejar la comunicación, seguridad y despliegue de servicios independientes.
-
-Esta revisión proporciona una base sólida para comprender los beneficios y desafíos de los microservicios, ofreciendo una comparación clara con las arquitecturas monolíticas tradicionales. Con la correcta implementación y gestión, los microservicios pueden facilitar un desarrollo más ágil y resistente para aplicaciones modernas.
 
