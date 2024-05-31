@@ -56,25 +56,6 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f" alt="image">
 </p>
 
-### Microservicios
-
-- **Ventajas**:
-  - **Escalabilidad**: Cada servicio puede escalarse de manera independiente según su necesidad de carga.
-  - **Despliegue Continuo**: Permite despliegues frecuentes y más seguros, ya que los cambios se hacen en servicios pequeños y aislados.
-  - **Tecnologías Diversas**: Cada servicio puede desarrollarse con la tecnología más adecuada para su función específica.
-  - **Tolerancia a Fallos**: Aislamiento de fallos, donde el fallo de un servicio no necesariamente impacta a toda la aplicación.
-  - **Mantenibilidad**: Facilita el mantenimiento y la evolución de la aplicación al permitir cambios en servicios individuales sin afectar a otros.
-- **Desventajas**:
-  - **Complejidad**: Introduce complejidades en términos de gestión de datos, transacciones distribuidas, y comunicación entre servicios.
-  - **Sobrecarga Operativa**: Requiere una infraestructura más robusta para manejar la orquestación y monitoreo de múltiples servicios.
-  - **Latencia**: La comunicación entre servicios puede introducir latencias adicionales.
-  - **Seguridad**: Aumenta la superficie de ataque debido a la exposición de múltiples endpoints.
-
-<p align="center">
-  <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f" alt="image">
-</p>
-
-
 ## Consideraciones Técnicas
 
 Para involucrarse con la arquitectura de microservicios, es crucial considerar ciertos aspectos técnicos:
