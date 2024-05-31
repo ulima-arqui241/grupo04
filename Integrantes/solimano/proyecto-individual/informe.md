@@ -15,9 +15,9 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Despliegue Independiente**: Los servicios pueden desplegarse sin necesidad de desplegar toda la aplicación.
   - **Tolerancia a Fallos**: Los servicios están diseñados para manejar fallos de manera autónoma y no afectar al sistema global.
  
-<div style="text-align: center;">
+<p align="center">
   <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/183755b4-9826-4ade-a34d-d52b4ad7fa43" alt="image">
-</div>
+</p>
 
 ## Comparación con Arquitectura Monolítica
 
@@ -34,9 +34,27 @@ La arquitectura de microservicios es una metodología de desarrollo de software 
   - **Despliegue**: Un pequeño cambio requiere volver a desplegar toda la aplicación, lo cual puede ser riesgoso y costoso en términos de tiempo.
   - **Flexibilidad**: Restringe el uso de diferentes tecnologías y lenguajes de programación.
 
-<div style="text-align: center;">
+<p align="center">
   <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/567b3116-b5fb-45ce-8b0e-7a225ba78f95" alt="image">
-</div>
+</p>
+
+### Microservicios
+
+- **Ventajas**:
+  - **Escalabilidad**: Cada servicio puede escalarse de manera independiente según su necesidad de carga.
+  - **Despliegue Continuo**: Permite despliegues frecuentes y más seguros, ya que los cambios se hacen en servicios pequeños y aislados.
+  - **Tecnologías Diversas**: Cada servicio puede desarrollarse con la tecnología más adecuada para su función específica.
+  - **Tolerancia a Fallos**: Aislamiento de fallos, donde el fallo de un servicio no necesariamente impacta a toda la aplicación.
+  - **Mantenibilidad**: Facilita el mantenimiento y la evolución de la aplicación al permitir cambios en servicios individuales sin afectar a otros.
+- **Desventajas**:
+  - **Complejidad**: Introduce complejidades en términos de gestión de datos, transacciones distribuidas, y comunicación entre servicios.
+  - **Sobrecarga Operativa**: Requiere una infraestructura más robusta para manejar la orquestación y monitoreo de múltiples servicios.
+  - **Latencia**: La comunicación entre servicios puede introducir latencias adicionales.
+  - **Seguridad**: Aumenta la superficie de ataque debido a la exposición de múltiples endpoints.
+
+<p align="center">
+  <img src="https://github.com/ulima-arqui241/grupo04/assets/122492617/8f2213a4-1885-4ccc-a6fc-c5dec0a0749f" alt="image">
+</p>
 
 ### Microservicios
 
