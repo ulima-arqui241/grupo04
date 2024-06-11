@@ -77,7 +77,7 @@ Para ejecutar el código de implementación del patrón Retry en Python, sigue e
    ```
 5. Observa los resultados en la terminal. Verás cómo la operación se reintenta varias veces en caso de fallos antes de tener éxito o fallar definitivamente.
 
-## Consideraciones Finales
+## Conclusiones
 El patrón Retry es una herramienta poderosa para mejorar la resiliencia y la fiabilidad de las aplicaciones. Sin embargo, debe ser utilizado con precaución para evitar la sobrecarga del sistema y manejar adecuadamente los errores persistentes. Es importante combinar el patrón Retry con otros patrones de diseño como Circuit Breaker para obtener una estrategia de resiliencia completa.
 
 ## Referencias
