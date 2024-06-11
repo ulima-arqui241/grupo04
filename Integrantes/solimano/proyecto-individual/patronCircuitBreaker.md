@@ -60,56 +60,9 @@ El patrón Circuit Breaker es útil en sistemas críticos como pagos y autentica
 
 ### Código de Implementación
 
-```python
-import time
-import random
+https://github.com/MXLEOMX/PatronesCloud
+### video de implementación
 
-class CircuitBreaker:
-    def __init__(self, failure_threshold, recovery_timeout):
-        self.failure_threshold = failure_threshold
-        self.recovery_timeout = recovery_timeout
-        self.failure_count = 0
-        self.last_failure_time = None
-        self.state = "CLOSED"
-
-    def call(self, operation):
-        if self.state == "OPEN":
-            if (time.time() - self.last_failure_time) > self.recovery_timeout:
-                self.state = "HALF-OPEN"
-            else:
-                raise Exception("Circuit is open")
-
-        try:
-            result = operation()
-            self.reset()
-            return result
-        except Exception as e:
-            self.failure_count += 1
-            self.last_failure_time = time.time()
-            if self.failure_count >= self.failure_threshold:
-                self.state = "OPEN"
-            raise e
-
-    def reset(self):
-        self.failure_count = 0
-        self.state = "CLOSED"
-
-# Example operation
-def unreliable_operation():
-    print("Trying to connect...")
-    if random.random() < 0.7:  # Simulating a 70% failure rate
-        raise Exception("Connection failed")
-    return "Connected"
-
-# Usage
-circuit_breaker = CircuitBreaker(failure_threshold=3, recovery_timeout=5)
-
-try:
-    result = circuit_breaker.call(unreliable_operation)
-    print(result)
-except Exception as e:
-    print(e)
-```
 
 ### Cómo Ejecutarlo
 Para ejecutar el código de implementación del patrón Circuit Breaker en Python, sigue estos pasos:
@@ -123,7 +76,7 @@ Para ejecutar el código de implementación del patrón Circuit Breaker en Pytho
    ```
 5. Observa los resultados en la terminal. Verás cómo el circuito se abre después de un número definido de fallos consecutivos y cómo intenta recuperarse después de un tiempo de espera.
 
-## Consideraciones Finales
+## Conclusiones
 El patrón Circuit Breaker es una herramienta esencial para mejorar la resiliencia y la fiabilidad de las aplicaciones distribuidas. Sin embargo, debe ser implementado y configurado cuidadosamente para balancear la protección del sistema con la disponibilidad de los servicios. Combinado con otros patrones de diseño, como Retry y Bulkhead, el patrón Circuit Breaker puede formar parte de una estrategia integral de resiliencia y manejo de errores en aplicaciones modernas.
 
 ## Referencias
