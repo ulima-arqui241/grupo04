@@ -111,6 +111,4 @@ El patrón Retry es una herramienta poderosa para mejorar la resiliencia y la fi
 
 ---
 
-**Autor**: Leonardo Solimano
 
-**Fecha**: Junio 2024
