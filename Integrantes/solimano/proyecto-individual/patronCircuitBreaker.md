@@ -61,8 +61,10 @@ El patrón Circuit Breaker es útil en sistemas críticos como pagos y autentica
 ### Código de Implementación
 
 https://github.com/MXLEOMX/PatronesCloud
+
 ### video de implementación
 
+https://drive.google.com/drive/u/1/folders/1GdSlOcmfZBUt_nClOOYotuJ2FJetQ689
 
 ### Cómo Ejecutarlo
 Para ejecutar el código de implementación del patrón Circuit Breaker en Python, sigue estos pasos:
