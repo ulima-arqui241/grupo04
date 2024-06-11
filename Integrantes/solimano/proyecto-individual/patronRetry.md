@@ -63,7 +63,7 @@ https://github.com/MXLEOMX/PatronesCloud
 
 ### Video de Implementación
 
-
+https://drive.google.com/drive/u/1/folders/1GdSlOcmfZBUt_nClOOYotuJ2FJetQ689
 
 ### Cómo Ejecutarlo
 Para ejecutar el código de implementación del patrón Retry en Python, sigue estos pasos:
