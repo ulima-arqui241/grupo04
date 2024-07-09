@@ -32,7 +32,8 @@ Se refinarán las capas de arquitectura que fueron definidas en la iteración an
 
 ### Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
 
-![Diagrama de Componentes Refinados](https://i.imgur.com/1aPfjJ4.png)
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/4271d8ff-ff40-4199-88d6-d64d91414e36)
+
 
 ### Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
 
