@@ -11,6 +11,7 @@ En base a las entradas especificadas, el objetivo de esta primera iteración es 
 ## Paso 3: Elegir uno o más Elementos del Sistema a Refinar
 
 No hay elementos a refinar, pues se está diseñando el sistema desde 0.
+
 ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/38008883-d9de-4632-ac5e-b16c7e9fee50)
 
 
