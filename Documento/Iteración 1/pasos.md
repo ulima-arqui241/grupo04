@@ -11,6 +11,8 @@ En base a las entradas especificadas, el objetivo de esta primera iteración es 
 ## Paso 3: Elegir uno o más Elementos del Sistema a Refinar
 
 No hay elementos a refinar, pues se está diseñando el sistema desde 0.
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/38008883-d9de-4632-ac5e-b16c7e9fee50)
+
 
 ## Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
 
@@ -30,8 +32,10 @@ No hay elementos a refinar, pues se está diseñando el sistema desde 0.
 
 ## Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
 
-![Diagrama de Contenedores](https://i.imgur.com/1aPfjJ4.png)
-![Diagrama de Componentes](https://i.imgur.com/bYJeDZg.png)
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/f846ce97-36a8-49e0-be2a-aa8225e7a963)
+
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/ff78f2aa-ba72-4d40-a44b-cd1b9ebb1181)
+
 
 ## Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
 
