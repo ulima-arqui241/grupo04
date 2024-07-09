@@ -30,8 +30,9 @@ Se da un mayor enfoque al refinamiento de la estructura de modelos en el element
 
 ### Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
 
-![Diagrama de Despliegue](https://i.imgur.com/1aPfjJ4.png)
-![Diagrama de Componentes Detallado](https://i.imgur.com/bYJeDZg.png)
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/0f53faae-420d-49fa-911b-bebaf3053233)
+
+![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/aed1e3f1-01a1-45c3-a59c-bcff7bdf3e3f)
 
 ### Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
 
