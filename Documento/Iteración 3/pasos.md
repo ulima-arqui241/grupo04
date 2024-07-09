@@ -1,0 +1,47 @@
+## Iteración 3: Refinar Componentes y Mejorar Disponibilidad
+
+### Paso 2: Establecer Objetivo de la Iteración
+
+En esta tercera iteración se busca refinar las iteraciones anteriores y continuar abarcando los escenarios de atributos de calidad restantes. En este caso, se elegirá refinar el atributo de Disponibilidad.
+
+| Propósito                                                  | Funcionalidad Primaria | Escenarios de Calidad          | Restricciones y Preocupaciones       |
+| ---------------------------------------------------------- | ---------------------- | ------------------------------ | ------------------------------------ |
+| Enfoque en refinar los últimos componentes y las iteraciones anteriores. | UC-06                  | QA-03, QA-05, QA-10, QA-17     | CRN-02, CRN-03, CON-02, CON-04, CON-05, CON-06 |
+
+### Paso 3: Elegir uno o más Elementos del Sistema a Refinar
+
+Se da un mayor enfoque al refinamiento de la estructura de modelos en el elemento de despliegue:
+
+- Servidores de almacenamiento de datos anteriormente especificados en la primera iteración.
+
+### Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
+
+| ID    | Decisión de Diseño       | Fundamentación                                                                                     |
+| ----- | ------------------------ | -------------------------------------------------------------------------------------------------- |
+| DEC-11 | Escalabilidad horizontal | RDS permite aumentar o disminuir la cantidad de instancias del backend en función de la demanda.   |
+| DEC-12 | Replicación              | RDS ofrece replicación multi-AZ, que implica mantener una copia sincrónica de la base de datos en una zona de disponibilidad secundaria. |
+| DEC-13 | Monitoreo y alertas      | Utilizar Amazon CloudWatch para monitorear métricas clave y establecer alarmas es importante para asegurar la disponibilidad. |
+
+### Paso 5: Instanciar Elementos de Arquitectura, Asignar Responsabilidades y Definir Interfaces
+
+- **Servicio de bases de datos relacional RDS**: Implementado principalmente por sus capacidades de escalabilidad y replicación.
+- **Amazon CloudWatch**: Servicio AWS de monitorización y administración conectado a la instancia de Amazon EC2.
+- **Amazon Simple Email Service (SES)**: Para el envío de notificaciones por correo electrónico a usuarios de la plataforma.
+
+### Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
+
+![Diagrama de Despliegue](https://i.imgur.com/1aPfjJ4.png)
+![Diagrama de Componentes Detallado](https://i.imgur.com/bYJeDZg.png)
+
+### Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
+
+| No Abordado | Parcialmente Abordado | Completamente Abordado | Decisión de Diseño        |
+| ----------- | --------------------- | ---------------------- | ------------------------- |
+|             |                       | UC-06                  | DEC-11, DEC-12, DEC-13    |
+|             | QA-03, QA-05          |                        | DEC-11, DEC-12            |
+|             | QA-10, QA-17          |                        | DEC-13                    |
+|             | CRN-02                |                        | Todos                     |
+|             | CRN-03                |                        | Todos                     |
+|             | CON-02, CON-04        |                        | DEC-12                    |
+|             | CON-05                |                        | DEC-12                    |
+|             | CON-06                |                        | DEC-13                    |
