@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Views\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Request\" />
+    <Folder Include="Models\Response\" />
+    <Folder Include="wwwroot\Views\Autenticacion\" />
+    <Folder Include="wwwroot\Views\Usuario\" />
+  </ItemGroup>
+
+</Project>
