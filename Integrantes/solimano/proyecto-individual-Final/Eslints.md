@@ -13,7 +13,7 @@ ESLint es una herramienta de análisis estático de código para identificar pat
 
 ## Instalación y Configuración
 
-### Instalación
+## Instalación
 
 Puedes instalar ESLint globalmente en tu sistema o localmente en tu proyecto. La instalación local es la más recomendada para asegurar que cada proyecto use su propia versión de ESLint.
 
