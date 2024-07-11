@@ -81,6 +81,10 @@ Proporcionaré el archivo de configuración completo y el código de ejemplo con
 ## Enlace de github
 https://github.com/MXLEOMX/Eslints
 
+## Enlace a video instructivo y guía de Eslints
+
+https://drive.google.com/drive/folders/1BxIiBJtBnAuA9uCHchq6aa2_sl15dHp2?usp=sharing
+
 ### Referencias
 
 - Brown, A. (2024). _Customizing ESLint for Enterprise_. Recuperado de https://example.com/customizing-eslint
