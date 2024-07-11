@@ -29,29 +29,28 @@ ESLint proporciona múltiples beneficios que lo hacen indispensable en muchos pr
 
 ## Instalación
 
-Puedes instalar ESLint globalmente en tu sistema o localmente en tu proyecto. La instalación local es la más recomendada para asegurar que cada proyecto use su propia versión de ESLint.
-
+Se puede instalar ESLint globalmente en el sistema o localmente en tu proyecto. La instalación local es la más recomendada para asegurar que cada proyecto use su propia versión de ESLint.
 
 npm install eslint --save-dev
 
 ## Inicialización
-Para comenzar a usar ESLint, necesitas inicializar un archivo de configuración. ESLint proporciona un comando interactivo para ayudarte a configurar este archivo.
+Para comenzar a usar ESLint, se necesitará inicializar un archivo de configuración. ESLint proporciona un comando interactivo para ayudarte a configurar este archivo.
 
 npx eslint --init
 
-Este comando te guiará a través de una serie de preguntas para configurar ESLint según tus necesidades.
+Este comando te pasará a través de una serie de preguntas para configurar ESLint acorde a lo que se requiera.
 
 ## Archivo de Configuración
-El archivo de configuración de ESLint (.eslintrc.json) define las reglas y entornos en los que ESLint debe trabajar. En este informe, se proporcionará un archivo de configuración completo en un enlace de GitHub para tu referencia.
+El archivo de configuración de ESLint (.eslintrc.json) define las reglas y entornos en los que ESLint debe trabajar. En este informe, se proporcionará un archivo de configuración completo en un enlace de GitHub para que se pueda utilizar como referencia.
 
 ## Uso de ESLint
 Comprobación de Código
-Una vez que ESLint esté configurado, puedes verificar tu código ejecutando el siguiente comando:
+Una vez que ESLint esté configurado, se puede verificar el código ejecutando el siguiente comando:
 
 npx eslint nombre-del-archivo.js
 
 ## Reglas de ESLint
-Las reglas de ESLint controlan cómo se analiza el código. Aquí tienes algunas de las reglas más importantes y útiles:
+Las reglas de ESLint controlan cómo se analiza el código. Aquí se proporcionarán algunas de las reglas más importantes y útiles:
 
 - semi: Enforces semicolons at the end of statements.
 - indent: Enforces consistent indentation.
@@ -76,8 +75,11 @@ Para ejecutar ESLint y ver todos los errores y advertencias, utiliza el siguient
 
 npx eslint example.js
 
-## Archivo de Configuración Completo
-Proporcionaré el archivo de configuración completo y el ejemplo de código con errores en un enlace de GitHub para tu referencia.
+## Archivo de Configuración y código Completo
+Proporcionaré el archivo de configuración completo y el código de ejemplo con errores en el enlace de github.
+
+## Enlace de github
+https://github.com/MXLEOMX/Eslints
 
 ### Referencias
 
