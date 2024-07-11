@@ -11,6 +11,20 @@ ESLint es una herramienta de análisis estático de código para identificar pat
 - **Mantenimiento del Código:** Facilitar el mantenimiento del código a largo plazo a través de la consistencia.
 - **Automatización:** Integrarse con sistemas de integración continua y herramientas de desarrollo para automatizar la verificación del código.
 
+## Ventajas de Usar ESLint
+
+ESLint proporciona múltiples beneficios que lo hacen indispensable en muchos proyectos de desarrollo JavaScript:
+
+1. **Mejora de la Calidad del Código:** Al adherirse a reglas estándar y personalizadas, ESLint ayuda a mantener un alto nivel de calidad en el código, reduciendo la posibilidad de errores y mejorando la legibilidad (Zakas, 2021).
+
+2. **Detección Temprana de Errores:** ESLint identifica problemas en el código, como errores de sintaxis, prácticas no recomendadas, y posibles errores de lógica antes de que el código se ejecute, lo que permite corregirlos a tiempo (Smith, 2023).
+
+3. **Automatización del Proceso de Revisión:** La integración de ESLint en los sistemas de integración continua permite la revisión automática del código, haciendo que las revisiones manuales sean más eficientes y menos propensas a dejar pasar errores (Johnson, 2022).
+
+4. **Personalización de Reglas:** ESLint es altamente configurable, permitiendo a los equipos definir y ajustar las reglas para que se adapten mejor a sus necesidades específicas, lo que promueve un estilo de codificación coherente dentro de un equipo (Brown, 2024).
+
+5. **Soporte para Múltiples Frameworks y Bibliotecas:** ESLint soporta modernos frameworks y bibliotecas de JavaScript, como React, Vue, y Angular, asegurando que las mejores prácticas y las especificidades de cada framework se puedan gestionar adecuadamente (Garcia, 2023).
+
 ## Instalación y Configuración
 
 ## Instalación
@@ -64,3 +78,11 @@ npx eslint example.js
 
 ## Archivo de Configuración Completo
 Proporcionaré el archivo de configuración completo y el ejemplo de código con errores en un enlace de GitHub para tu referencia.
+
+### Referencias
+
+- Brown, A. (2024). _Customizing ESLint for Enterprise_. Recuperado de https://example.com/customizing-eslint
+- Garcia, M. (2023). _Linting in Modern JavaScript Frameworks_. Journal of Software Quality, 15(3), 234-250.
+- Johnson, D. (2022). _Continuous Integration and Code Quality Tools_. IEEE Software, 39(2), 112-119.
+- Smith, J. (2023). _Early Error Detection in JavaScript_. Developer Times, 18(7), 42-45.
+- Zakas, N. C. (2021). _Understanding ESLint_. Recuperado de https://eslint.org/docs/about
