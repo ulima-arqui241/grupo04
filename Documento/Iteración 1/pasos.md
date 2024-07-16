@@ -14,6 +14,7 @@ No hay elementos a refinar, pues se está diseñando el sistema desde 0.
 
 ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/38008883-d9de-4632-ac5e-b16c7e9fee50)
 
+##Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
 
 | ID   | Decisión de Diseño                                     | Fundamentación                                                                                       |
 | ---- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
@@ -25,9 +26,12 @@ No hay elementos a refinar, pues se está diseñando el sistema desde 0.
 
 ## Paso 5: Instanciar Elementos de Arquitectura, Asignar Responsabilidades y Definir Interfaces
 
-- **Amazon EC2**: Implementación de un servicio web externo en la nube, principalmente por la facilidad de implementación de diversos servicios AWS.
-- **Patrón de despliegue three-tier**: Despliegue de la aplicación en tres capas: presentación, aplicación y datos.
-- **Patrón de arquitectura MVC**: Implementación del patrón MVC para la arquitectura del backend de la aplicación web.
+| Elemento de Arquitectura                    | Descripción                                                                                       | Fundamentación                                                                                       |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Amazon EC2                                  | Implementación de un servicio web externo en la nube, principalmente por la facilidad de implementación de diversos servicios AWS. | Amazon EC2 permite ajustar los recursos según la demanda, asegurando alta disponibilidad y rendimiento. La infraestructura de AWS ofrece soporte y herramientas adicionales para la gestión y monitoreo del sistema, lo que es crucial para garantizar la seguridad y la estabilidad de la plataforma. |
+| Patrón de despliegue three-tier             | Despliegue de la aplicación en tres capas: presentación, aplicación y datos.                      | La implementación de un patrón Three-tier divide la aplicación en capas de presentación, lógica de negocio y datos, mejorando la mantenibilidad y escalabilidad del sistema. Esta separación permite un desarrollo modular, facilita la identificación y resolución de problemas, y mejora la seguridad al restringir el acceso directo a la base de datos. Además, cada capa puede escalarse independientemente, optimizando el uso de recursos y mejorando el rendimiento general. |
+| Patrón de arquitectura MVC                  | Implementación del patrón MVC para la arquitectura del backend de la aplicación web.              | El patrón MVC (Modelo-Vista-Controlador) permite una clara separación de responsabilidades, mejorando la organización y mantenibilidad del código. Este enfoque modular facilita la adición de nuevas funcionalidades, la modificación de las existentes y la resolución de problemas, al mismo tiempo que asegura una mayor consistencia y coherencia en el desarrollo de la aplicación. MVC también es ampliamente adoptado y compatible con muchas tecnologías backend, lo que proporciona flexibilidad y soporte. |
+
 
 ## Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
 
