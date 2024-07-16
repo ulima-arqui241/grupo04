@@ -14,19 +14,21 @@ Se da un mayor enfoque al refinamiento de la estructura de modelos en el element
 
 - Servidores de almacenamiento de datos anteriormente especificados en la primera iteración.
 
-### Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
+## Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
 
-| ID    | Decisión de Diseño       | Fundamentación                                                                                     |
-| ----- | ------------------------ | -------------------------------------------------------------------------------------------------- |
-| DEC-11 | Escalabilidad horizontal | RDS permite aumentar o disminuir la cantidad de instancias del backend en función de la demanda.   |
-| DEC-12 | Replicación              | RDS ofrece replicación multi-AZ, que implica mantener una copia sincrónica de la base de datos en una zona de disponibilidad secundaria. |
-| DEC-13 | Monitoreo y alertas      | Utilizar Amazon CloudWatch para monitorear métricas clave y establecer alarmas es importante para asegurar la disponibilidad. |
+| ID    | Decisión de Diseño          | Fundamentación                                                                                                                                                                         |
+|-------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DEC-11| Escalabilidad horizontal    | RDS permite aumentar o disminuir la cantidad de instancias del backend en función de la demanda. En una plataforma educativa, esto es crucial para manejar fluctuaciones en el tráfico de usuarios, especialmente durante picos como exámenes y períodos de inscripción. La capacidad de escalar horizontalmente asegura que el sistema pueda mantener un rendimiento óptimo sin interrupciones. |
+| DEC-12| Replicación                 | RDS ofrece replicación multi-AZ, que implica mantener una copia sincrónica de la base de datos en una zona de disponibilidad secundaria. Esto asegura alta disponibilidad y durabilidad de los datos, protegiendo contra fallos en la zona de disponibilidad principal. En una plataforma educativa, donde la integridad y disponibilidad de los datos son esenciales, esta característica proporciona una capa adicional de seguridad y confiabilidad. |
+| DEC-13| Monitoreo y alertas         | Utilizar Amazon CloudWatch para monitorear métricas clave y establecer alarmas es importante para asegurar la disponibilidad. En una plataforma educativa, es vital detectar y responder rápidamente a problemas como aumentos inusuales en el tráfico, fallos en el sistema o problemas de rendimiento. CloudWatch proporciona las herramientas necesarias para monitorear el sistema en tiempo real y tomar medidas proactivas para mantener la estabilidad y disponibilidad del servicio. |
 
-### Paso 5: Instanciar Elementos de Arquitectura, Asignar Responsabilidades y Definir Interfaces
+## Paso 5: Instanciar Elementos de Arquitectura, Asignar Responsabilidades y Definir Interfaces
 
-- **Servicio de bases de datos relacional RDS**: Implementado principalmente por sus capacidades de escalabilidad y replicación.
-- **Amazon CloudWatch**: Servicio AWS de monitorización y administración conectado a la instancia de Amazon EC2.
-- **Amazon Simple Email Service (SES)**: Para el envío de notificaciones por correo electrónico a usuarios de la plataforma.
+| Elemento de Arquitectura               | Descripción                                                                                                                | Fundamentación                                                                                                                                                       |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Servicio de bases de datos relacional RDS | Implementado principalmente por sus capacidades de escalabilidad y replicación.                                              | RDS permite escalar instancias según la demanda y ofrece replicación multi-AZ para alta disponibilidad y durabilidad de datos, características esenciales para una plataforma educativa confiable y robusta. |
+| Amazon CloudWatch                      | Servicio AWS de monitorización y administración conectado a la instancia de Amazon EC2.                                        | CloudWatch permite monitorear métricas clave y establecer alertas, lo cual es crucial para detectar y resolver problemas rápidamente, asegurando la disponibilidad y rendimiento del sistema educativo.       |
+| Amazon Simple Email Service (SES)      | Para el envío de notificaciones por correo electrónico a usuarios de la plataforma.                                           | SES es un servicio escalable y fiable para enviar correos electrónicos, ideal para mantener a los usuarios informados sobre actualizaciones, recordatorios y notificaciones importantes de la plataforma.    |
 
 ### Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
 
