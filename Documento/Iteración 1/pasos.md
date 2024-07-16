@@ -33,10 +33,36 @@ No hay elementos a refinar, pues se está diseñando el sistema desde 0.
 | Patrón de arquitectura MVC                  | Implementación del patrón MVC para la arquitectura del backend de la aplicación web.              | El patrón MVC (Modelo-Vista-Controlador) permite una clara separación de responsabilidades, mejorando la organización y mantenibilidad del código. Este enfoque modular facilita la adición de nuevas funcionalidades, la modificación de las existentes y la resolución de problemas, al mismo tiempo que asegura una mayor consistencia y coherencia en el desarrollo de la aplicación. MVC también es ampliamente adoptado y compatible con muchas tecnologías backend, lo que proporciona flexibilidad y soporte. Esto es esencial para la robustez y escalabilidad de una plataforma educativa compleja. |
 
 ## Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
-
+## Diagrama de Contenedores
 ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/f846ce97-36a8-49e0-be2a-aa8225e7a963)
 
+**Fundamentación:**
+El diagrama de contenedores ilustra la arquitectura de alto nivel de la plataforma educativa, destacando la interacción entre los componentes principales. La separación en distintos contenedores facilita la comprensión de cómo se comunican los distintos elementos del sistema y cómo se gestionan las responsabilidades.
+
+- **Usuario:** Representa al cliente final que interactúa con la plataforma educativa a través de un navegador web.
+- **Web Browser:** El navegador web actúa como el cliente desde donde los usuarios interactúan con la plataforma educativa. Esta separación es crucial para mantener la modularidad y escalabilidad del sistema, permitiendo actualizaciones y mejoras en la interfaz de usuario sin afectar la lógica del servidor.
+- **REST API y API Gateway:** Se utiliza un gateway de API para manejar las solicitudes de la API REST. Este componente es esencial para gestionar la autenticación, el enrutamiento de solicitudes y la agregación de datos, mejorando la seguridad y la eficiencia de la comunicación entre el cliente y el servidor.
+- **Sistema de Autenticación:** Un sistema dedicado a la verificación de usuarios asegura que solo los usuarios autenticados puedan acceder a las funcionalidades de la plataforma, garantizando la seguridad y privacidad de los datos.
+- **Servidor de Aplicaciones:** Maneja la lógica de negocio y las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre la base de datos. Esta separación permite una gestión más eficiente de los recursos y facilita el mantenimiento del sistema.
+- **Base de Datos:** Se encarga del almacenamiento persistente de datos. La separación de la base de datos en un contenedor independiente permite una gestión más segura y eficiente de los datos, y facilita la implementación de mecanismos de replicación y recuperación ante desastres.
+
+
+
+## Diagrama de Componentes
 ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/ff78f2aa-ba72-4d40-a44b-cd1b9ebb1181)
+
+**Fundamentación:**
+El diagrama de componentes desglosa la arquitectura del servidor de aplicaciones en módulos más pequeños, detallando las responsabilidades y las interacciones entre ellos. Esta estructuración facilita el desarrollo, mantenimiento y escalabilidad del sistema.
+
+- **Web Browser:** El navegador web actúa como el cliente desde donde los usuarios envían solicitudes a la plataforma educativa. Esta capa se encarga de la interacción del usuario con la interfaz de la aplicación.
+- **Servidor de Aplicaciones:** Maneja la lógica de negocio de la plataforma y se descompone en varios controladores específicos para diferentes funcionalidades.
+
+  - **Controlador de Usuarios:** Maneja todas las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) relacionadas con los usuarios, como el registro, la actualización de perfiles y la eliminación de cuentas. Esta separación mejora la organización del código y facilita el mantenimiento.
+  - **Controlador de Grupos:** Responsable de las operaciones relacionadas con la gestión de grupos de estudio, incluyendo la creación, modificación y eliminación de grupos. Permite a los administradores y moderadores gestionar los grupos de manera eficiente.
+  - **Controlador de Contenidos:** Gestiona los recursos educativos compartidos en la plataforma, permitiendo la subida, modificación y acceso a materiales educativos. Esta modularidad facilita la extensión y el mantenimiento del sistema.
+- **Base de Datos:** La interacción con la base de datos se realiza a través de los controladores, que manejan las operaciones específicas. Esto asegura una separación clara entre la lógica de negocio y la gestión de datos, mejorando la escalabilidad y la seguridad del sistema. La base de datos almacena de manera persistente toda la información relacionada con usuarios, grupos y contenidos educativos.
+
+
 
 
 ## Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
