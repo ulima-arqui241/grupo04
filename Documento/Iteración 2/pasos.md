@@ -33,8 +33,23 @@ Se refinarán las capas de arquitectura que fueron definidas en la iteración an
 | Agora.io                                    | Servicio de videollamadas que permite a la aplicación web crear aplicaciones de chat y transmisión en tiempo real. | Agora.io proporciona una solución robusta que puede manejar altas demandas de conexión y mantener una calidad de servicio superior, lo cual es crítico para la efectividad del aprendizaje en línea. Su escalabilidad, servidores distribuidos y fácil integración aseguran un alto rendimiento y seguridad en las comunicaciones en tiempo real, esenciales para clases virtuales y reuniones de grupo. |
 
 ### Paso 6: Bosquejar Vistas y Registrar Decisiones de Diseño
-
 ![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/4271d8ff-ff40-4199-88d6-d64d91414e36)
+
+**Fundamentación:**
+El diagrama de componentes refinados desglosa aún más la arquitectura del servidor de aplicaciones, integrando servicios externos esenciales para el funcionamiento de la plataforma educativa. Esta estructura detallada facilita la comprensión de cómo se manejan las diversas funcionalidades y cómo interactúan con servicios externos.
+
+- **Web Browser:** El navegador web sigue siendo el punto de interacción del usuario con la plataforma educativa, enviando solicitudes al servidor de aplicaciones.
+- **Servidor de Aplicaciones:** Maneja la lógica de negocio de la plataforma y se descompone en varios controladores específicos para diferentes funcionalidades:
+
+  - **Controlador de Usuarios:** Gestiona todas las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) relacionadas con los usuarios, como el registro, la actualización de perfiles y la eliminación de cuentas. Esta separación mejora la organización del código y facilita el mantenimiento.
+  - **Controlador de Grupos:** Responsable de las operaciones relacionadas con la gestión de grupos de estudio, incluyendo la creación, modificación y eliminación de grupos. Permite a los administradores y moderadores gestionar los grupos de manera eficiente.
+  - **Controlador de Contenidos:** Gestiona los recursos educativos compartidos en la plataforma, permitiendo la subida, modificación y acceso a materiales educativos. Esta modularidad facilita la extensión y el mantenimiento del sistema.
+
+- **Base de Datos:** La interacción con la base de datos se realiza a través de los controladores, que manejan las operaciones específicas. Esto asegura una separación clara entre la lógica de negocio y la gestión de datos, mejorando la escalabilidad y la seguridad del sistema. La base de datos almacena de manera persistente toda la información relacionada con usuarios, grupos y contenidos educativos.
+- **Servicios Externos:** La plataforma integra servicios externos que son esenciales para su funcionalidad:
+
+  - **Amazon S3:** Utilizado para el almacenamiento de archivos y grabaciones que los usuarios deseen subir. La alta escalabilidad y seguridad del servicio son fundamentales para gestionar la gran cantidad de materiales educativos que los usuarios generan y consumen.
+  - **Agora.io:** Servicio de videollamadas que permite a la aplicación web crear aplicaciones de chat y transmisión en tiempo real. Su escalabilidad, servidores distribuidos y fácil integración aseguran un alto rendimiento y seguridad en las comunicaciones en tiempo real, esenciales para clases virtuales y reuniones de grupo.
 
 
 ### Paso 7: Analizar el Diseño Actual, Revisar Objetivo de la Iteración y Logro del Propósito de Diseño
