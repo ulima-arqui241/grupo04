@@ -13,16 +13,41 @@ En base a las entradas especificadas, el objetivo de esta primera iteración es 
 No hay elementos a refinar, pues se está diseñando el sistema desde 0.
 
 ## Diagrama de Contexto
-![image](https://github.com/ulima-arqui241/grupo04/assets/122492617/38008883-d9de-4632-ac5e-b16c7e9fee50)
+![image](/Diagramas/modelo_arq.png)
 
 **Fundamentación:**
 El diagrama de contexto proporciona una visión general y simplificada de la plataforma educativa, destacando la interacción principal entre el cliente y los componentes clave del sistema. Este diagrama ayuda a entender cómo los usuarios finales interactúan con la plataforma y cómo se manejan las operaciones fundamentales.
 
-- **Cliente:** Representa al usuario final que interactúa con la plataforma educativa. Los clientes pueden ser estudiantes, administradores, moderadores o cualquier persona que utilice la plataforma para acceder a recursos educativos, participar en grupos de estudio o realizar otras actividades relacionadas.
-- **Plataforma Educativa:** Es el sistema central que facilita la interacción del usuario y maneja las operaciones críticas de la plataforma. Dentro de la plataforma educativa se encuentran los siguientes componentes:
+### Cliente
+Representa al usuario final que interactúa con la plataforma educativa. Los clientes pueden ser estudiantes, administradores, moderadores, o cualquier persona que utilice la plataforma para acceder a recursos educativos, participar en grupos de estudio o realizar otras actividades relacionadas.
 
-  - **Servidor de Aplicaciones:** Maneja la lógica de negocio y procesa las solicitudes de los usuarios. Este componente es responsable de realizar las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los datos almacenados en la base de datos. Asegura que las solicitudes del usuario se gestionen de manera eficiente y segura.
-  - **Base de Datos:** Almacena de manera persistente toda la información relacionada con los usuarios, grupos, contenidos educativos y otras entidades relevantes. La base de datos es accesible a través del servidor de aplicaciones, que ejecuta las operaciones necesarias para mantener la integridad y disponibilidad de los datos.
+### Plataforma Web
+El punto de interacción del cliente con el sistema, donde se obtiene información a través del API Gateway.
+
+### API Gateway
+Actúa como un punto central de entrada para todas las solicitudes del cliente. Redirige las solicitudes a los servicios correspondientes y maneja la comunicación entre la plataforma web y los servicios.
+
+## Servicios del Sistema
+
+### Servicio de Notificaciones
+- **Función**: Almacena y gestiona datos de notificaciones.
+- **Base de Datos**: Almacena data de notificaciones.
+
+### Servicio de Contenidos Educativos
+- **Función**: Almacena y gestiona contenido educativo.
+- **Base de Datos**: Almacena contenido educativo.
+
+### Servicio de Gestión de Usuarios
+- **Función**: Almacena y gestiona la información de los usuarios.
+- **Base de Datos**: Almacena información de los usuarios.
+
+### Servicio de Autenticación
+- **Función**: Almacena y gestiona los usuarios autenticados.
+- **Base de Datos**: Almacena los usuarios autenticados.
+
+### Servicio de Gestión de Grupos
+- **Función**: Almacena y gestiona los grupos creados por los usuarios.
+- **Base de Datos**: Almacena grupos de usuarios.
 
 ### Paso 4: Elegir uno o más Conceptos de Diseño que Satisfacen el Driver Seleccionado
 
